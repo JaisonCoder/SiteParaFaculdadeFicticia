@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         body {
+
             background-image: url("fundo2.png");
             margin: 15%;
             justify-content: center;
@@ -17,20 +18,27 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
+        header {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        main {
+            width: 100%;
+        }
+
 
 
         .menu {
 
+            width: 100%;
             list-style: none;
-            padding: 5;
             text-decoration: none;
             display: flex;
             background-color: #3359a0;
-            padding: 2% 1em;
+            padding: 2%;
             align-items: center;
             justify-content: center;
-            width: 100%;
-            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 
@@ -44,6 +52,17 @@
 
         }
 
+        .marcador-pagina {
+            background-color: #060547;
+            border-radius: 24px;
+            padding: 3%;
+
+
+
+
+        }
+
+
         .menu a:hover {
             background-color: #060547;
             border-radius: 24px;
@@ -53,14 +72,30 @@
         .material-symbols-outlined {
             font-variation-settings:
                 'FILL' 0,
-                'wght' ,
+                'wght',
                 'GRAD' 0,
                 'opsz' 24;
-        
-        }
-        .material-symbols-outlined{
-            
 
+        }
+
+        .material-symbols-outlined {
+            color: #3359a0;
+            font-size: 100px;
+
+
+
+        }
+
+        .conteiner-contato {
+            display: flex;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        h2 {
+            padding: 10px;
         }
     </style>
     </style>
@@ -72,14 +107,18 @@
         <ul class="menu">
             <li><a href="index.html"> Home</a></li>
             <li><a href="PAGE2.HTML"> Quem somos</a></li>
-            <li><a href="page3.html">Contato</a></li>
+            <li class="marcador-pagina"><a href="page3.html">Contato</a></li>
         </ul>
     </header>
     <main>
         <h1>Nossos meios de comunicação:</h1>
-        <span class="material-symbols-outlined">
-            call
-        </span>
+        <div class="conteiner-contato">
+            <span class="material-symbols-outlined">
+                call
+            </span>
+            <h2> Nosso telefone:</h1>
+                <h2>(xxxx-xxxx)</h2>
+        </div>
     </main>
 </body>
 

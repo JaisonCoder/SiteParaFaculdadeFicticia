@@ -13,8 +13,11 @@
       justify-content: center;
       align-items: center;
       margin-top: 5%;
-      font-family: 'BebasNeue-Regular'
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+    }
+    header{
+      overflow: hidden;
     }
 
 
@@ -26,12 +29,12 @@
       text-decoration: none;
       display: flex;
       background-color: #3359a0;
-      padding: 2% 1em;
+      padding: 2% ;
       align-items: center;
       justify-content: center;
       width: 100%;
-     border-radius: 8px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
 
 
     }
@@ -42,9 +45,23 @@
       font-size: 1.2em;
       
     }
+
+    .marcador-pagina{
+      background-color: #060547;
+      border-radius: 24px;
+      padding: 3%;
+     
+      
+     
+      
+    }
+    
+
+
     .menu a:hover{
       background-color: #060547;
       border-radius: 24px;
+      
       
     }
 
@@ -116,7 +133,7 @@
   <header>
     <img class="logo-png" src="logo.png" alt="logofacul">
     <ul class="menu">
-      <li><a href="index.html"> Home</a></li>
+      <li class="marcador-pagina"><a href="index.html"> Home</a></li>
       <li><a href="PAGE2.HTML"> Quem somos</a></li>
       <li><a href="page3.html">Contato</a></li>
     </ul>
@@ -127,10 +144,10 @@
     <div class="container">
       <form action="#" method="post">
         <h2>Login</h2>
-        <label for="username">Username:</label>
+        <label for="username">Nome de usuario:</label>
         <input type="text" id="username" name="username" required>
 
-        <label for="password">Password:</label>
+        <label for="password">Senha:</label>
         <input type="password" id="password" name="password" required>
 
         <button type="submit">Login</button>
